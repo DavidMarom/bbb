@@ -98,7 +98,7 @@ btnRoll.addEventListener('click', () => {
     playing = false;
     enableGameButtons(false);
     updateUI();
-    setStatus(`Player ${activePlayer + 1} wins with ${scores[activePlayer]} points! 🎉`);
+    setStatus(`Player ${activePlayer + 1} wins with ${scores[activePlayer]} points!`);
     return;
   }
 
