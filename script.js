@@ -1,5 +1,5 @@
 
-const scoreEls = [document.getElementById('score--0'), document.getElementById('score--1')];
+const scoreEls = [document.getElementById('score-0'), document.getElementById('score-1')];
 const playerEls = [document.querySelector('.player-0'), document.querySelector('.player-1')];
 const dice1El = document.getElementById('dice1');
 const dice2El = document.getElementById('dice2');
