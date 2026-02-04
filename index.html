@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="game">
+      <header class="game-header">
+        <h1 class="game-title">Two-Player Dice Game</h1>
+        <div class="game-target">
+          Target:
+          <input
+            id="targetScoreInput"
+            type="number"
+            min="10"
+            max="500"
+            step="10"
+            value="50"
+          />
+        </div>
+      </header>
+
+      <section class="players">
+        <article class="player player-0 player-active">
+          <h2 class="player-name">Player 1</h2>
+          <p class="player-score" id="score--0">0</p>
+        </article>
+
+        <article class="player player-1">
+          <h2 class="player-name">Player 2</h2>
+          <p class="player-score" id="score--1">0</p>
+        </article>
+      </section>
+
+      <section class="board">
+        <div class="dice-container">
+          <div class="dice" id="dice1">-</div>
+          <div class="dice" id="dice2">-</div>
+        </div>
+
+        <p class="status" id="statusText">
+          Click <strong>New Game</strong> to start.
+        </p>
+
+        <div class="controls">
+          <button id="btnNew" class="btn btn-primary">New Game</button>
+          <button id="btnRoll" class="btn" disabled>Roll</button>
+          <button id="btnHold" class="btn" disabled>Pass</button>
+        </div>
+
+      </section>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
